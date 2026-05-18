@@ -30,4 +30,4 @@
 ![HAProxy](https://github.com/DefAKAAlex/claster-balance/blob/main/IMG/exmpl-ok.png)
 ![HAProxy](https://github.com/DefAKAAlex/claster-balance/blob/main/IMG/stat3.png)
 
-[конфигаруционный файл 2](haproxy2.cfg)
+[конфигурационный файл 2](haproxy2.cfg)
