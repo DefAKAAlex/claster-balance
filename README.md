@@ -8,11 +8,11 @@
 
 1) Как показано на лекции, запустил два сервера Python на портах 8888 и 9999 соответственно.
 2) Установил HAProxy
-![HAProxy](http://IMG/haproxy-status.png)
+![HAProxy](https://github.com/DefAKAAlex/claster-balance/tree/main/IMG/haproxy-status.png)
 3) При обращении к HaProxy балансировка показывает равномерное распределение
-![balance](http://IMG/curl-balance.png)
+![balance](https://github.com/DefAKAAlex/claster-balance/tree/main/IMG/curl-balance.png)
 
-[конфигаруционный файл 1].(haproxy1.cfg)
+[конфигаруционный файл 1](haproxy1.cfg)
 
 
 ## Задание 2
@@ -22,12 +22,12 @@
 *- На проверку направьте конфигурационный файл haproxy, скриншоты, где видно перенаправление запросов на разные серверы при обращении к HAProxy c использованием домена example.local и без него.*
 
 1) Запустил ещё один сервер на порту 8899
-![serv2](serv3-img.png)
+![serv2](https://github.com/DefAKAAlex/claster-balance/tree/main/IMG/serv3-img.png)
 После изменения конфигурационного файла получаем следующую картину:
 2) При обращении без использования адреса домена example.local возвращает описанную мной 403 ошибку
-![HAProxy](http://IMG/denay-exmpl.png)
+![HAProxy](https://github.com/DefAKAAlex/claster-balance/tree/main/IMG/denay-exmpl.png)
 3) При обращении с использованием адреса examlpe.local HAProxy разбрассывает траффик соответственно весам
-![HAProxy](http://IMG/exmpl-ok.png)
-![HAProxy](http://IMG/stat3.png)
+![HAProxy](https://github.com/DefAKAAlex/claster-balance/tree/main/IMG/exmpl-ok.png)
+![HAProxy](https://github.com/DefAKAAlex/claster-balance/tree/main/IMG/stat3.png)
 
-[конфигаруционный файл 2].(haproxy2.cfg)
+[конфигаруционный файл 2](haproxy2.cfg)
